@@ -1,0 +1,66 @@
+https://maps.vietmap.vn/api/route?api-version=1.1&apikey={your-apikey}&point=10.79628438955497,106.70592293472612&point=10.801891047584164,106.70660958023404&vehicle=motorcycle
+
+{
+    "license": "vietmap",
+    "code": "OK",
+    "messages": null,
+    "paths": [
+        {
+            "distance": 2194.4,
+            "weight": 351.4,
+            "time": 351400,
+            "transfers": 0,
+            "points_encoded": true,
+            "bbox": [
+                106.70594,
+                10.79479,
+                106.71154,
+                10.80325
+            ],
+            "points": "}s{`Ac_hjSjAkCFQRu@Lu@F_@D]Ng@ZaALa@JY~AoDDEmBiBe@[WMg@M_@KmA]uA_@a@KkA]qA[[Gs@MUE_AKu@Co@Ew@CYAmAGeBKaAEsAKCQMQUGM?KBIFGHCJoBO{@Ck@AQ@MZAJAjAG|ACz@MnCEnAGlBCx@EjA?\\EvAEjBE~@Cr@F?HqBv@DBSDIBAl@HFADAVSD@JLB@h@BDADEDAJ@",
+            "instructions": [
+                {
+                    "distance": 403.4,
+                    "heading": 0,
+                    "sign": 0,
+                    "interval": [
+                        0,
+                        11
+                    ],
+                    "text": "Tiếp tục theo Nguyễn Cửu Vân",
+                    "time": 54800,
+                    "street_name": "Nguyễn Cửu Vân",
+                    "last_heading": null
+                },
+                /// More guide direction here
+                {
+                    "distance": 58.7,
+                    "heading": 0,
+                    "sign": 0,
+                    "interval": [
+                        71,
+                        79
+                    ],
+                    "text": "Tiếp tục theo Đường Không Tên",
+                    "time": 26300,
+                    "street_name": "Đường Không Tên",
+                    "last_heading": null
+                },
+                {
+                    "distance": 0,
+                    "heading": 0,
+                    "sign": 4,
+                    "interval": [
+                        79,
+                        79
+                    ],
+                    "text": "Đích đến",
+                    "time": 0,
+                    "street_name": "Đường Không Tên",
+                    "last_heading": null
+                }
+            ],
+            "snapped_waypoints": "c_hjS}s{`AeDab@"
+        }
+    ]
+}

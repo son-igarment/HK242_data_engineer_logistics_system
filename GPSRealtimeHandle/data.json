@@ -1,0 +1,58 @@
+[
+    {
+        "vehicle_id": "xeA",
+        "start_lat": 10.814834, 
+        "start_lon": 106.601116,
+        "end_lat": 10.814934,
+        "end_lon": 106.642066
+    },
+    {
+        "vehicle_id": "xeB",
+        "start_lat": 10.874788,
+        "start_lon": 106.778426, 
+        "end_lat": 10.814934,
+        "end_lon": 106.642066
+    },
+    {
+        "vehicle_id": "xeC",
+        "start_lat": 10.874788,
+        "start_lon": 106.778426,
+        "end_lat": 10.814834,
+        "end_lon": 106.601116
+    },
+    {
+        "vehicle_id": "xeD",
+        "end_lat": 10.874788,
+        "end_lon": 106.778426,
+        "start_lat": 10.814934,
+        "start_lon": 106.642066
+    },
+    {
+        "vehicle_id": "xeE",
+        "end_lat": 10.814834,
+        "end_lon": 106.601116,
+        "start_lat": 10.865648, 
+        "start_lon": 106.614098
+    },
+    {
+        "vehicle_id": "xeF",
+        "end_lat": 10.814834,
+        "end_lon": 106.601116,
+        "start_lat": 10.865648, 
+        "start_lon": 106.591181
+    },
+    {
+        "vehicle_id": "xeG",
+        "end_lat": 10.814834,
+        "end_lon": 106.601116,
+        "start_lat": 10.859326,
+        "start_lon": 106.598649
+    },
+    {
+        "vehicle_id": "xeJ",
+        "end_lat": 10.874788,
+        "end_lon": 106.778426,
+        "start_lat": 10.841876, 
+        "start_lon": 106.779670
+    }
+]

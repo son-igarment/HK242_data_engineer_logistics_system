@@ -1,0 +1,12 @@
+# vehicle_iot_simulator/.env Example
+DEV_MODE=True
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USER=user # Or guest if not set in docker-compose
+RABBITMQ_PASS=password # Or guest if not set in docker-compose
+
+VEHICLE_UPDATE_EXCHANGE=vehicle_updates_exchange # New exchange
+VEHICLE_UPDATE_ROUTING_KEY=vehicle.location.update # New routing key
+
+UPDATE_INTERVAL_SECONDS=10 # How often to send updates
+NUM_SIMULATED_VEHICLES=5 # How many vehicles to simulate 

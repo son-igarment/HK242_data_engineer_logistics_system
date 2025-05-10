@@ -1,0 +1,14 @@
+# warehouse_service/.env Example
+DEV_MODE=True
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USER=user # Or guest if not set in docker-compose
+RABBITMQ_PASS=password # Or guest if not set in docker-compose
+TRIP_UPDATE_EXCHANGE=trip_update_exchange
+TRIP_UPDATE_ROUTING_KEY=trip_status # Key to listen for
+WAREHOUSE_SERVICE_QUEUE=warehouse_trip_updates # Unique queue name
+
+# Add other configs if needed (e.g., Redis, DB for warehouse state)
+# REDIS_HOST=localhost
+# REDIS_PORT=6379
+# REDIS_DB=1 # Use a different DB perhaps? 

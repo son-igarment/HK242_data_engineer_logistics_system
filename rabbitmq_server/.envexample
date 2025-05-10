@@ -1,0 +1,39 @@
+# General
+DEV_MODE=True # Set to False for production
+
+# RabbitMQ
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USER=user
+RABBITMQ_PASS=password
+ORDER_EXCHANGE=order_exchange
+ORDER_QUEUE=order_queue
+ORDER_ROUTING_KEY=new_order
+TRIP_UPDATE_EXCHANGE=trip_update_exchange
+TRIP_UPDATE_QUEUE=trip_update_queue # Consumed by other systems potentially
+TRIP_UPDATE_ROUTING_KEY=trip_status
+
+# Service Gen Order
+ORDER_GENERATION_INTERVAL_MINUTES=5
+WAREHOUSE_1_LAT=10.814834 # Add latitude from datawarehouse.json
+WAREHOUSE_1_LON=106.601116 # Add longitude from datawarehouse.json
+WAREHOUSE_2_LAT=10.874788 # Add latitude from datawarehouse.json
+WAREHOUSE_2_LON=106.778426 # Add longitude from datawarehouse.json
+# Add ratios for the 4 generation logics if needed
+# LOGIC_RATIO_W1_W2=0.25
+# LOGIC_RATIO_W1_W1=0.25
+# LOGIC_RATIO_W2_W2=0.25
+# LOGIC_RATIO_W2_W1=0.25 # Should sum to 1
+VIETMAP_API_KEY=YOUR_VIETMAP_API_KEY # Replace with your actual key or use mock in dev
+
+# Dispatch and Operation Order
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_DB=0
+
+# Database (Production Mode) - Uncomment and fill when needed
+# POSTGRES_HOST=localhost
+# POSTGRES_PORT=5432
+# POSTGRES_DB=your_db_name
+# POSTGRES_USER=your_db_user
+# POSTGRES_PASSWORD=your_db_password 

@@ -1,0 +1,22 @@
+# vehicle_management/.env Example
+DEV_MODE=True
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USER=user # Or guest if not set in docker-compose
+RABBITMQ_PASS=password # Or guest if not set in docker-compose
+
+# Trip Updates from Dispatch Service
+TRIP_UPDATE_EXCHANGE=trip_update_exchange
+TRIP_UPDATE_ROUTING_KEY=trip_status 
+VEHICLE_TRIP_QUEUE=vehicle_trip_updates # Renamed old VEHICLE_SERVICE_QUEUE
+
+# Location Updates from IoT Simulator
+VEHICLE_UPDATE_EXCHANGE=vehicle_updates_exchange 
+VEHICLE_UPDATE_BINDING_KEY=vehicle.location.update # Key to bind for location updates
+VEHICLE_LOCATION_QUEUE=vehicle_location_updates # New queue for location updates
+
+# Add other configs if needed (e.g., Redis, DB for vehicle state)
+# REDIS_HOST=localhost
+# REDIS_PORT=6379
+# REDIS_DB=2 # Use a different DB perhaps? 
+VIETMAP_API_KEY="YOUR_VIETMAP_API_KEY_HERE" # Replace with your actual key 

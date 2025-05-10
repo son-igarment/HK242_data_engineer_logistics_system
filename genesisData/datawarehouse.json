@@ -1,0 +1,29 @@
+[{
+    "warehouse_id": "1",
+    "warehouse_name": "warehouse_1",
+    "warehouse_address": "791 Đ. Lê Trọng Tấn,Bình Hưng Hoà, Bình Tân, Hồ Chí Minh, Việt Nam",
+    "latitude": "10.814834",
+    "longitude": "106.601116",
+    "warehouse_phone": "warehouse_1_phone",
+    "warehouse_email": "warehouse_1_email",
+    "warehouse_website": "warehouse_1_website",
+    "warehouse_image": "warehouse_1_image",
+    "capacity": {
+        "weight_kg": 100000,
+        "volume_m3": 500
+    }
+},{
+    "warehouse_id": "2",
+    "warehouse_name": "warehouse_2",
+    "warehouse_address": "Linh Xuân, Thủ Đức, Hồ Chí Minh, Việt Nam",
+    "latitude": "10.874788",
+    "longitude": "106.778426",
+    "warehouse_phone": "warehouse_2_phone",
+    "warehouse_email": "warehouse_2_email",
+    "warehouse_website": "warehouse_2_website",
+    "warehouse_image": "warehouse_2_image",
+    "capacity": {
+        "weight_kg": 100000,
+        "volume_m3": 500
+    }
+}]

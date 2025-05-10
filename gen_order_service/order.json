@@ -1,0 +1,36 @@
+[{
+        "order_code": order_code,
+        "start_address": start_address,
+        "start_location_latitude": start_lat,
+        "start_location_longitude": start_lon,
+        "end_address": end_address,
+        "end_location_latitude": end_lat,
+        "end_location_longitude": end_lon,
+        "user_name": fake.name(),
+        "user_phone": fake.phone_number(),
+        "receiver_name": fake.name(),
+        "receiver_phone": fake.phone_number(),
+        "note": fake.sentence(),
+        "item_description": "Gói hàng nhỏ",
+        "weight_kg": 1500,
+        "volume_m3": 3
+    },
+    {
+        "order_code": order_code,
+        "start_address": start_address,
+        "start_location_latitude": start_lat,
+        "start_location_longitude": start_lon,
+        "end_address": end_address,
+        "end_location_latitude": end_lat,
+        "end_location_longitude": end_lon,
+        "user_name": fake.name(),
+        "user_phone": fake.phone_number(),
+        "receiver_name": fake.name(),
+        "receiver_phone": fake.phone_number(),
+        "note": fake.sentence(),
+        "item_description": "Gói hàng lớn",
+        "weight_kg": 3000,
+        "volume_m3": 8
+    }
+
+]

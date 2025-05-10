@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis_btl
+    ports:
+      - "6379:6379"
+    # Add volumes for persistence if needed:
+    volumes:
+      - redis_data:/data
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq_btl
+    ports:
+      - "5672:5672" # AMQP port for services
+      - "15672:15672" # Management UI port
+    # Environment variables for default user (optional, default is guest/guest)
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+    # Add volumes for persistence if needed:
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis_commander_btl
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:redis:6379 # Connect to the redis service defined above
+    ports:
+      - "8081:8081" # Expose Redis Commander web UI on port 8081
+    depends_on:
+      - redis # Ensure redis starts before redis-commander
+
+# Optional: Define named volumes for data persistence
+volumes:
+  redis_data:
+  rabbitmq_data: 

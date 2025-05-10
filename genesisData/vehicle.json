@@ -1,0 +1,11 @@
+[{
+    "vehicle_type": "Pickup Truck",
+    "vehicle_capacity": 3500,
+    "vehicle_volume": 10
+},
+{
+    "vehicle_type": "Heavy Truck",
+    "vehicle_capacity": 105000,
+    "vehicle_volume": 300
+}
+]

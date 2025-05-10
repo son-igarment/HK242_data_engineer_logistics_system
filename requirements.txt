@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pika # RabbitMQ client
+python-dotenv # For .env file handling
+redis # Redis client
+requests # For Vietmap API (or mock)
+Faker # For random data generation
+# Add psycopg2-binary for production database access when needed
+# psycopg2-binary 

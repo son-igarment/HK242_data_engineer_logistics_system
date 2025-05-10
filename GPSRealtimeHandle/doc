@@ -1,0 +1,39 @@
+write for me service include 3 part:
+- using mockup data: following the TripOrders table in db.sql file, example: 5 trip.
+- Auto update vehicle location:
+    - use python
+    - use rabbitmq (for publish)
+    - use mockup data
+    - write a script to auto update vehicle location from rabbitmq (every 10 seconds) for rabbitMQRequest.txt.
+
+- RabbitMQ server:
+    - use python
+    - use rabbitmq
+    - connect the `auto update vehicle location` part and `backend` part
+
+- backend:
+    - use python
+    - use fastapi
+    - use rabbitmq
+    - use mockup data
+    - prepare for connect to database
+    main logic:
+        - receive data from rabbitmq with info following the rabbitMQRequest.txt
+        - with the vehicle_id, find the matching logic in the database (with current use mockup data)
+        - with current vehicle gps, find the vehicles are in the true route or not.
+            - if false, noti to the frontend and allow user to view the vehicle location on map, and the predicted route save in database
+            - if true, do nothing
+        - the backend will support frontend to view all the vehicles info (number of vehicles, number of vehicles in the true route, number of vehicles not in the true route)
+        - allow user to view a specific vehicle info (location, speed, heading, odometer, and predicte routed)
+
+- frontend:
+    - use react
+    - use tailwindcss
+    - use mockup data
+    - prepare for connect to backend
+    - show the vehicles in front end (number of vehicles, number of vehicles in the true route, number of vehicles not in the true route)
+    - allow user to view a specific vehicle info (location, speed, heading, odometer, and predicte routed)
+    - allow user to view the vehicle not in the true route on map (hightlight to user observe the vehicle)
+
+
+

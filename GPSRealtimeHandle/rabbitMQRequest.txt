@@ -1,0 +1,16 @@
+- Routing Key: `vehicle.telemetry.update.<vehicle_id>`
+- *Ví dụ:* `vehicle.telemetry.update.xeC`
+
+{
+  "timestamp": "2025-03-30T14:15:30Z",
+  "vehicle_id": "xeC",
+  "gps": {
+    "latitude": 10.8855,
+    "longitude": 106.7521,
+    "altitude_m": 15.0, // Độ cao (tùy chọn)
+    "accuracy_m": 5.0 // Độ chính xác GPS (tùy chọn)
+  },
+  "speed_kmh": 52.5, // Tốc độ km/h
+  "heading": 270, // Hướng di chuyển (độ, 0=Bắc, 90=Đông, ...) (tùy chọn)
+  "odometer_km": 123456.7 // Số km đã đi (tùy chọn)
+}
